@@ -1,0 +1,172 @@
+\documentclass[14pt]{beamer}  %14pt adjust font size
+\usetheme{Luebeck}    %change theme of project
+\usecolortheme{rose}   %change color of project
+\usepackage{pgfplots}  %use to create graph and plots
+\pgfplotsset{compat=1.18} 
+\title{Intro to Latex Applications}  %cover information
+\author{Lin, Anila, Mahnoor, Tulsi}
+\date{02/22/2023}
+\begin{document}
+\maketitle      %display cover information
+
+\begin{frame}{Computing math formulas in Latex}    %Display title page
+\tableofcontents              %Display table of contents
+\end{frame}
+
+
+\section{Pythagorean Theorem}    %Display contents at Title page
+\begin{frame}{Pythagorean Theorem}    
+    \begin{theorem}[Pythagoras]
+        $a^2+b^2=c^2$
+    \end{theorem}
+\end{frame}
+
+\begin{frame}{Pythagorean Theorem Continued}     
+    Step 1: \\ Given a = 1 & b = 5, replace a with 1 and b with 5 so you end up with this: \\ $1+5=c$ \\
+    Step 2: \\ Now square formula derived in step 1: \\ $1^2+5^2=c^2$ \\
+    Step 3: \\ You should get $1+25=c^2$, now do: \\  $1+25$
+\end{frame}
+
+\begin{frame}{Pythagorean Theorem Continued}     
+    Step 4: \\ You should get $26=c^2$ \\ 
+    Step 5: \\ Now take square root of both sides: \\ \sqrt{26}=\sqrt{c}
+\end{frame}
+
+\begin{frame}{Pythagorean Theorem Continued}
+    \begin{block}{Solution}
+        Now c = \sqrt{26} \\ so your final answer: \\ given a = 1 & b = 5, c = \sqrt{26}
+    \end{block}
+\end{frame}
+
+
+
+\section{Integrals}     
+\begin{frame}{Integrals}    
+    \begin{theorem}[Integrals]
+        \[ \int_{a}^{b} (equation) \,dx \]
+    \end{theorem}
+\end{frame}
+
+\begin{frame}{Integrals Continued}     
+    Step 1: \\ Find the anti-derivative of a given equation \\
+    Step 2: \\ Then do b - a using the anti-derivative not the original equation \\
+    Step 3: \\ Look up anti-derivative formulas on google and then follow the example below
+\end{frame}
+
+\begin{frame}{Integrals Continued: Example}     
+    Step 1: \\ Find the integral of \[ \int_{1}^{5} (3sin(5x)) \,dx \] 
+\end{frame}
+
+\begin{frame}{Integrals Continued: Example}     
+    Step 2: \\ Find anti-derivative of sin(5x): \\
+    It is known that the \[ \int_{a}^{b} (sin(nx) \,dx \]  is equal to \[\frac{1}{n}(cos(nx)) + C\] \\
+\end{frame}
+
+\begin{frame}{Integrals Continued: Example}     
+    Step 3: \\ therefore the \\
+    \[ \int_{1}^{5} (3sin(5x) \,dx \]  from a = 1 to b = 5 is equal to \[3\times \frac{1}{5}(cos(5x)) + C\] \\
+\end{frame}
+
+\begin{frame}{Integrals Continued: Example}     
+    Step 4: \\ so the definite integral from a = 1 to b = 5 is equal to  \\
+    \[\frac{3}{5}(cos(5x)) + C\] \\
+\end{frame}
+
+\begin{frame}{Integrals Continued: Example}     
+    \begin{block}{Solution}
+        compute the value of F(B) - F(A) \\
+        \[\frac{3}{5}(cos(5(5))) - \frac{3}{5}(cos(5(1))) \] \\
+        so final answer is:
+        \[\frac{3}{5}cos(25) - \frac{3}{5}cos(5)\] \\
+    \end{block}
+\end{frame}
+
+
+
+\section{Graphs}
+
+\begin{frame}{Default graph of $x^3$}
+Step 1: Create graph environments \\ 
+Step 2: add axis  \\
+Step 3: add function $x^3$
+
+\begin{figure}
+\raggedleft
+\begin{tikzpicture}      %create envirment for graph
+\begin{axis} [width=.6\textwidth]             %create x-y axis and adjust the size
+\addplot{x^3};             %create a x^2 graph
+\end{axis}
+\end{tikzpicture}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Customize graph }
+\begin{figure}
+\centering
+    \begin{tikzpicture}       %set domain of x-axis [-3,3] y-axis[-4,4],  make (0,0) as coordinate label x-axis as x, label y-axis as y,  named this graph as Customize graph of x^3
+        \begin{axis}[xmin=-3,xmax=3,ymin=-5,ymax=5, axis lines=middle, width=.65\textwidth,
+            xlabel=$x$, ylabel=$y$, title={Customize graph}]
+            %set color of graph as black, dash, with 25 samples dot, and then set domain to [-2,2]
+            \addplot[color=black,dashed,mark=*,samples=25,domain=-2:2]{x^3};
+        \end{axis}
+    \end{tikzpicture}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Customize graph }
+\small Step 1: Set Range of x-axis and y-axis, and make (0,0) as center\\
+\small xmin=-3,xmax=3,ymin=-5,ymax=5, axis lines=middle \\
+\bigskip
+\small Step 2: Create labels for x-axis, y-axis, and create title for the graph\\
+ \small xlabel=x, ylabel=y, title = Customize graph\\
+\bigskip
+\small Step 3: add function, and set color, line, samples, and domain\\
+\small color=black,dashed,mark=*,samples=25,domain=-2:2
+\end{frame}
+
+
+\begin{frame}{Graph of sin(x) and cos(x)}
+    \begin{tikzpicture}
+        \begin{axis}[
+            clip=false,
+            xmin=0,xmax=2.5*pi,
+            ymin=-1.5,ymax=1.5, 
+            axis lines=middle,
+            xtick={0,pi/2,pi,3*pi/2,2*pi},   %vertical dash lines
+            xticklabels={$0$,$\frac{\pi}{2}$,$\pi$,$\frac{3}{2}\pi$,$2\pi$}, %labels for vertical dash lines
+            xticklabel style={anchor=south west}, %make labels up right a little bit of spot
+            xmajorgrids=true,   %make vertical line appear
+            grid style=dashed,    %make vertical line as dash
+            xlabel=$x$, ylabel=$y$, title={sin(x) and cos(x)}]
+            \addplot[domain=0:2*pi,blue]{sin(deg(x))}   %add sin(x) as black graph 
+                node[right,pos=0.9]{$f(x)=\sin x$};    %put a label, at right side, 90% of length of the sin(x)
+            \addplot[domain=0:2*pi,red]{cos(deg(x))}
+                node[right,pos=1]{$g(x)=\cos x$};
+        \end{axis}
+    \end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Graph of sin(x) and cos(x)}
+\small Step 1: Set Range of x-axis and y-axis, and make (0,0) as center\\
+\small xmin=-3,xmax=3,ymin=-5,ymax=5, axis lines=middle \\
+\bigskip
+\small Step 2: create vertical dash lines and make labels for them\\
+ \small xtick={0,pi/2,2*pi} xticklabels={$0$,$\frac{\pi}{2}$}\\
+\bigskip
+\small Step 3: add function, and set color, and domain\\
+\small domain=0:2*pi, blue sin(deg(x))\\
+\bigskip
+\small Step 4: add label for sin(deg(x))\\
+\small node[right,pos=0.9]{$f(x)=\sin x$}
+\end{frame}
+
+\begin{frame}
+Latex is powerful. We can create a lot interesting slides by Latex.\\
+We leave it to you to work this out for yourself and to explore this interesting function further.
+\vspace{.5cm}
+Thank you for your attention today.
+\end{frame}
+
+
+\end{document}
