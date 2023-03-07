@@ -24,8 +24,4 @@ The presentation developed teaches the viewer how to compute certain mathematica
 3. Learnt how to make visually appealing presentations with the use of LaTeX
 4. LaTeX allows for adjusting formats of mathematical formulas which allows presentations to be more visually appealing compared to using a presentation software like Google Slides or Powerpoint where it can be difficult to get the exact formatting needed.
 
-## Development
-The method that was followed to perform this algorithm is the following:
-
-## Website Link
-<a href="https://sites.google.com/nyit.edu/csci318projectone/home?authuser=1">Website</a>
+<a href="https://sites.google.com/nyit.edu/csci318projectone/home?authuser=1">Website Link</a>
