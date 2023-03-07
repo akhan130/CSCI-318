@@ -2,6 +2,10 @@
 > This Web Development Project was developed as part of a project for Programming Language Concepts. This project includes an HTML website hosted by Google Sites and a 
 presentation developed using LaTeX. 
 
+<br>
+<a href="https://sites.google.com/nyit.edu/csci-318-website/home?authuser=1">Website Link</a>
+
+
 ## HTML Website includes:
 1. About page which introduces my team that worked on this project
 2. Report page that has a report for our project
@@ -22,6 +26,4 @@ The presentation developed teaches the viewer how to compute certain mathematica
 2. Improved web designing skills by adjusting format and user interface of the website with the help of HTML style attributes
 3. Learnt how to host websites publicly after developing them with HTML
 3. Learnt how to make visually appealing presentations with the use of LaTeX
-4. LaTeX allows for adjusting formats of mathematical formulas which allows presentations to be more visually appealing compared to using a presentation software like Google Slides or Powerpoint where it can be difficult to get the exact formatting needed.
-
-<a href="https://sites.google.com/nyit.edu/csci318projectone/home?authuser=1">Website Link</a>
+4. LaTeX allows for adjusting formats of mathematical formulas which allows presentations to be more visually appealing compared to using a presentation software like Google Slides or Powerpoint where it can be difficult to get the exact formatting needed
