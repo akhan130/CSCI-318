@@ -7,9 +7,9 @@ presentation developed using LaTeX.
 
 
 ## HTML Website includes:
-1. About page which introduces my team that worked on this project
-2. Report page that has a report for our project
-3. Slides page that displays the LaTeX slides we developed
+1. About page which introducesthe team that worked on this project
+2. Report page that has a report for the project
+3. Slides page that displays the LaTeX slides developed
 4. Code page that has links to the source-code files of the HTML and LaTeX (those links are part of this repository)
 
 ## LaTeX Presentation:
@@ -27,3 +27,4 @@ The presentation developed teaches the viewer how to compute certain mathematica
 3. Learnt how to host websites publicly after developing them with HTML
 3. Learnt how to make visually appealing presentations with the use of LaTeX
 4. LaTeX allows for adjusting formats of mathematical formulas which allows presentations to be more visually appealing compared to using a presentation software like Google Slides or Powerpoint where it can be difficult to get the exact formatting needed
+5. Learnt how to input images with HTML that aren't restricted to access on a local machine
