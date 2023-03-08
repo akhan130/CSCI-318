@@ -1,4 +1,4 @@
-# CSCI 318 Web Development Project
+# CSCI 318 Web Development & LaTeX Project
 > This Web Development Project was developed as part of a project for Programming Language Concepts. This project includes an HTML website hosted by Google Sites and a 
 presentation developed using LaTeX. 
 
