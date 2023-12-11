@@ -7,7 +7,7 @@ presentation developed using LaTeX.
 
 
 ## HTML Website includes:
-1. About page which introducesthe team that worked on this project
+1. About page which introduces the team that worked on this project
 2. Report page that has a report for the project
 3. Slides page that displays the LaTeX slides developed
 4. Code page that has links to the source-code files of the HTML and LaTeX (those links are part of this repository)
